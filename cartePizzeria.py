@@ -22,6 +22,7 @@ class CartePizzeria:
                 self.pizzas.remove(pizza)
                 return
         raise CartePizzeriaException(f"No pizza named '{name}' found in the menu") 
+    """
 try:
     carte = CartePizzeria()
     print(carte.is_empty()) 
@@ -34,7 +35,7 @@ try:
 except CartePizzeriaException as e:
     print(e)
     
-"""
+
 def main():
     # Création de quelques pizzas
     pizza_margherita = Pizza("Margherita", ["tomato", "mozzarella", "basil"], 8.99)
